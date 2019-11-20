@@ -1,18 +1,18 @@
+import Extra from './Extra.js';
 export default{
+    components:{
+        Extra
+    },
     template:`
     <div>
     <ol>
-        <todo-item
+        <Extra
         v-for="item in groceryList"
       v-bind:todo="item"
       v-bind:key="item.id"
-      ></todo-item>
+      ></Extra>
     </ol>
     </div>
-    `,
-    template:`
-    props: ['todo'],
-    template: '<li>{{todo.text}}</li>'
     `,
 
     data(){
